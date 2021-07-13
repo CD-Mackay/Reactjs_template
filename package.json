@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "webpack serve - open"
+    "start": "webpack-cli serve --mode development --open --hot --port 3001"
   },
   "author": "Connor",
   "license": "ISC",
