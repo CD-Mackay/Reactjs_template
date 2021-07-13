@@ -1,5 +1,10 @@
 /* Library Imports */
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 /* Component Imports */
 import Home from 'pages/Home/Home';
@@ -11,10 +16,16 @@ import StyledApp from './StyledApp.js'
 
 const App = () => {
   return (
-    <StyledApp>
-        <GlobalStyle />
-        <Home />
-    </StyledApp>
+    <Router>
+      <StyledApp>
+          <GlobalStyle />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+      </StyledApp>
+    </Router>
   )
 };
 
