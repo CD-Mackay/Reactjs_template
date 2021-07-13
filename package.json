@@ -4,7 +4,8 @@
   "description": "ReactJS App Template",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "webpack serve - open"
   },
   "author": "Connor",
   "license": "ISC",
