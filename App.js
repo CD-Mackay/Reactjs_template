@@ -1,8 +1,20 @@
+/* Library Imports */
 import React from 'react';
+
+/* Component Imports */
+import Home from 'pages/Home/Home';
+
+/* Asset Imports */
+import { GlobalStyle } from './GlobalStyles.js'
+import StyledApp from './StyledApp.js'
+
 
 const App = () => {
   return (
-    <h1>I am App</h1>
+    <StyledApp>
+        <GlobalStyle />
+        <Home />
+    </StyledApp>
   )
 };
 
